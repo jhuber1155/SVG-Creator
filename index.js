@@ -30,4 +30,4 @@ inquirer
     .then((data) =>{
         fs.writeFile("logo.svg", JSON.stringify(data), (err) => {
             err ? console.error(err) : console.log("Generated logo.svg")})
-        }); // ??? How to move file after its created? its not fs.rename and I cant figure out the join.(__dirname, 'examples', 'logo.svg')
+        }); // ??? How to move file after its created? its not fs.rename("logo.svg", "examples") and I cant figure out the join.(__dirname, 'examples', 'logo.svg')
